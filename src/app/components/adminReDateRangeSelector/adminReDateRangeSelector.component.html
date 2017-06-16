@@ -1,0 +1,25 @@
+<!--<div style="width:100%">{{heading}}</div>-->
+
+<!--<p-toolbar>-->
+    <div >
+        <table>
+            <tr>
+                <td>
+                    <button  [style.width]="'24px'" pButton type="button" (click)="minus()" icon="fa-minus"></button>
+                </td>
+                <td>
+                    <adminReDropdown [options]="dateRange"   [(ngModel)]="selectedDate" (onChange)="selectItemChanged($event)"></adminReDropdown>
+                </td>
+                <td>
+                    <button [style.width]="'24px'" pButton type="button" (click)="plus()"  icon="fa-plus"></button>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <div>{{selectedDate.label}}</div>
+    </div>
+
+<!--</p-toolbar>-->
+
+<!--<button>asfsfd</button>-->
